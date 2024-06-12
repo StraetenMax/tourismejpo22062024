@@ -1,0 +1,43 @@
+mjml
+    mj-head
+        mj-title JPO du 22 juin 2024 Ecosup Tourisme
+        mj-font(name='Roboto' href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap')/
+        mj-attributes
+            mj-class(name='d-titre' font-size='38px' line-height='40px' font-weight='700' color='#1F3C90')/
+            mj-class(name='d-sous-titre' font-size='16px' line-height='20px' font-weight='700' color='#787FBD')/
+            mj-class(name='d-date' font-size='20px' line-height='24px' font-weight='700' color='#1F3C90')/
+            mj-class(name='d-text' font-size='16px' line-height='20px' color='#14141f')/
+            mj-class(name='d-lieu' font-size='16px' line-height='20px' color='#626262')/
+            mj-class(name='d-adress' font-size='13px' line-height='15px' color='#FFFFFF')/
+            mj-class(name='d-admin' align='center' font-size='12px' line-height='16px' color='#626262')/
+            mj-all(font-family='Roboto, Arial, Helvetica,sans serif' font-weight='400')/
+        mj-style.
+            @media(max-width:480px){
+                .m-footer{
+                    text-align: center !important;
+                }
+                .m-footer1{
+                    width: 100% !important;
+                }
+                .m-footer2 {
+                    text-align: center !important;
+                    width: 100% !important;
+                    padding-top:10px !important;
+                }
+            }
+    //- body
+    mj-body(background-color='#efefef')
+        //- contenu
+        block content
+        //- signature
+        block signature
+            include ../includes/_signature
+        //- syrendre
+        block syrendre
+            include ../includes/_syrendre
+        //- footer
+        block footer
+            include ../includes/_footer
+        //- reglement
+        block reglement
+            include ../includes/_reglement
