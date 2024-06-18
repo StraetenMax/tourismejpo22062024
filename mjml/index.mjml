@@ -15,13 +15,11 @@
     </mj-attributes>
     <mj-style>
       @media(max-width: 480px){
-          .m-footer{
+          .m-footer div{
               text-align: center !important;
-          }
-          .m-footer1{
               width: 100% !important;
           }
-          .m-footer2 {
+          .m-footer1 {
               text-align: center !important;
               width: 100% !important;
               padding-top:10px !important;
@@ -37,7 +35,7 @@
     </mj-section>
     <mj-section padding="0">
       <mj-column>
-        <mj-image width="600px" padding="0" href="https://ecosup-tourisme.fr" src="https://i.ibb.co/Z1VdWgj/tourisme-JPO22062024.jpg" target="_blank" alt="Affiche de la Journée Portes Ouvertes du samedi 22 juin 2024"/>
+        <mj-image width="600px" padding="0" href="https://ecosup-tourisme.fr" src="https://i.ibb.co/hZBdBYP/tourisme-JPO062024.jpg" target="_blank" alt="Affiche de la Journée Portes Ouvertes du samedi 22 juin 2024"/>
       </mj-column>
     </mj-section>
     <mj-section background-color="#ffffff" padding="0">
@@ -83,20 +81,14 @@
     </mj-section>
     <mj-section background-color="#1F3C90">
       <mj-column width="265px">
-        <mj-text padding-top="0" padding-bottom="0" font-size="16px" font-weight="900" color="#FFFFFF" css-class="m-footer1">
-          <div class="m-footer">ECOSUP CAMPUS</div>
-        </mj-text>
-        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" color="#FFFFFF" css-class="m-footer1">
-          <div class="m-footer">17 Place Charles et Albert Roussel,</div>
-        </mj-text>
-        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer1">
-          <div class="m-footer">59200 TOURCOING</div>
-        </mj-text>
-        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer1"><a class="m-footer" style="text-decoration:none;color:#ffffff;" href="tel:0320700606">03.20.70.06.06</a></mj-text>
-        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer1"><a class="m-footer" style="text-decoration:none;color:#ffffff;" href="mailto:contact@ecosup-campus.fr">contact@ecosup-campus.fr</a></mj-text>
+        <mj-text padding-top="0" padding-bottom="0" font-size="16px" font-weight="900" color="#FFFFFF" css-class="m-footer">ECOSUP CAMPUS</mj-text>
+        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" color="#FFFFFF" css-class="m-footer">17 Place Charles et Albert Roussel,</mj-text>
+        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer">59200 TOURCOING</mj-text>
+        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer"><a style="text-decoration:none;color:#ffffff;" href="tel:0320700606">03.20.70.06.06</a></mj-text>
+        <mj-text padding-top="0" padding-bottom="0" mj-class="d-adress" css-class="m-footer"><a style="text-decoration:none;color:#ffffff;" href="mailto:contact@ecosup-campus.fr">contact@ecosup-campus.fr</a></mj-text>
       </mj-column>
       <mj-column width="265px">
-        <mj-social padding-top="0" padding-bottom="0" align="right" icon-size="35px" mode="horizontal" css-class="m-footer2">
+        <mj-social padding-top="0" padding-bottom="0" align="right" icon-size="35px" mode="horizontal" css-class="m-footer1">
           <mj-social-element background-color="#20274F" name="facebook" href="https://www.facebook.com/EcosupCamp"></mj-social-element>
           <mj-social-element background-color="#20274F" name="instagram" href="https://www.instagram.com/ecosup.campus/"></mj-social-element>
           <mj-social-element background-color="#20274F" name="linkedin" href="https://linkedin.com/company/ecosup-campus"></mj-social-element>
@@ -105,7 +97,7 @@
     </mj-section>
     <mj-section>
       <mj-column width="250px">
-        <mj-text padding="0 30px" mj-class="d-admin">Cet email a été envoyé à <span style="text-decoration:none;color:#626262;">{{contact.EMAIL}}</span>, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.</mj-text>
+        <mj-text padding="0 30px" mj-class="d-admin">Cet email a été envoyé à <a style="text-decoration:none;color:#626262;" href="mailto:{{contact.EMAIL}}">{{contact.EMAIL}}</a>, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.</mj-text>
         <mj-text padding="0 30px" mj-class="d-admin"><a style="text-decoration:none;color:#1F3C90;text-transform:uppercase;" href="{{ unsubscribe }}">Se désinscrire</a></mj-text>
         <mj-spacer height="20px"/>
         <mj-text padding="0 30px" mj-class="d-admin">©2024 ECOSUP CAMPUS</mj-text>
